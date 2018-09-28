@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .block{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -125px 0 0 -125px;
+        }
+        .entForm{
+            max-width: 300px;
+        }
+
+        #google{
+            width: 40px;
+        }
+        #entbut{
+            width: 250px;
+        }
+
+    </style>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="auth my-5">
+    <h2>Авторизация</h2>
+</div>
+<div class="block">
+<form  method="post">
+    <div class="entForm">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+        </div>
+        <input type="text"  name="login" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Пароль</span>
+        </div>
+        <input type="password" name="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+        <button id="entbut" class="btn btn-outline-primary" type="submit">Войти</button>
+    </div>
+</form>
+
+    <div class="my-3">
+        <a id="entbut" class="btn btn-outline-primary " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
+            Зарегистрироваться
+        </a>
+    </div>
+    <div class="collapse m-3" id="collapseExample" >
+        <form  method="post" enctype="multipart/form-data">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                </div>
+                <input class="form-control" type="text" name="email" placeholder="введите email"/>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Пароль</span>
+                </div>
+                <input type="password" name="passreg" class="form-control" placeholder="введите пароль">
+            </div>
+            <button class="btn btn-primary btn-lg btn-block bg-primary my-2 " type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div class="enteGo my-4">
+    <a id="entbut" class="btn btn-outline-primary" href="/main">
+
+        <span>
+            <img id="google" src="https://cdn2.iconfinder.com/data/icons/social-media-network-fill-flat-icon/512/GooglePlus-2-512.png">
+    </span>
+        <span>
+    Войти с помощью
+    </span>
+    </a>
+    </div>
+
+</div>
+
+</body>
+</html>
